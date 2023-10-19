@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/df0441dc5b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <button type="button" class="btn btn-outline-secondary mt-2"><a href="index.html" style="text-decoration: none;">На головну</a></button>
+        </div>        
+    </header>
+
+    <content>
+        <section class="task1">
+            <div class="container">
+                <h3 class="mt-2">Розрахунок прямокутника</h3>
+                <label for="length">Довжина:</label>
+                <input type="text" id="length" onblur="validateInput('length')" placeholder="Введіть довжину">
+                <br>
+                <label for="width">Ширина:</label>
+                <input type="text" id="width" onblur="validateInput('width')" placeholder="Введіть ширину">
+                <br>
+                <p>Периметр: <span id="perimeter">0</span></p>
+                <p>Площа: <span id="area">0</span></p>
+                <p>Довжина діагоналі: <span id="diagonal">0</span></p>
+                <p id="error-message" style="color: red;"></p>
+            </div>
+        </section>
+
+
+        <section class="task2">
+            <div class="container">
+                <h3 class="mt-2">Чат</h3>
+                <div class="task2wrapper">
+                    <div class="user1_wrapper">
+                        <label for="user1" class="label_user">User1</label>
+                        <form id="user1-form" class="mt-2">
+                            <input type="text" id="user1-message-input" placeholder="Введіть повідомлення" autocomplete="off">
+                            <button type="button" class="btn btn-outline-primary mt-2" onclick="sendMessage('user1')">Відправити</button>
+                        </form>
+                    </div>
+                    <div class="chat_wrapper">
+                        <div id="chat-box"></div>
+                    </div>
+                    <div class="user2_wrapper">
+                        <label for="user2" class="label_user">User2</label>
+                        <form id="user2-form" class="mt-2">
+                            <input type="text" id="user2-message-input" placeholder="Введіть повідомлення" autocomplete="off">
+                            <button type="button" class="btn btn-outline-primary mt-2" onclick="sendMessage('user2')">Відправити</button>
+                        </form>
+                    </div>                    
+                </div>              
+            </div>
+        </section>
+
+        <section class="task3">
+            <div class="container">
+                <h3 class="mt-2">Транслітерація українського тексту</h3>
+                <div class="task3wrapper">
+                    <label class="textarea-label" for="ukrainianText">Введіть український текст:</label>
+                    <textarea id="ukrainianText" class="textarea-input" oninput="transliterateUkrainian()"></textarea>
+                    <br>
+                    <label class="textarea-label" for="latinText">Транслітерований текст:</label>
+                    <textarea id="latinText" class="textarea-output" readonly></textarea>
+                </div>
+            </div>
+        </section>
+
+        <section class="task4">
+            <div class="container">
+                <h3 class="mt-2">Визначення дня тижня</h3>
+                <label for="birthDate">Оберіть дату народження:</label>
+                <input type="date" id="birthDate">
+                <button id="calculateButton" class="btn btn-primary">Визначити день тижня</button>
+                <p id="result" style="font-weight: 700;"></p>
+            </div>
+        </section>
+    </content>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

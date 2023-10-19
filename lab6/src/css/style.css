@@ -1,0 +1,471 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.logo-link{
+    font-weight: 700;
+}
+
+header{
+    position: relative;
+    height: 56px;
+}
+
+.navbar-sticky{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.about{
+    background-color:white;
+    padding: 10px;
+}
+
+.about_header{
+    font-weight: 700;
+    color: dodgerblue;
+    text-align: center;
+}
+
+.img_about_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_img{
+    width: 30%;
+}
+
+.courses{
+    background-color: rgba(87, 166, 230, 0.4);
+    padding-bottom: 20px;
+}
+
+.header_courses{
+    padding-top: 20px;
+    font-weight: 700;
+    color: dodgerblue;
+    text-align: center;
+}
+
+.courses_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course_container{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 10px;
+}
+
+.course_title{
+    color: #007bff;
+    font-weight: 700;
+}
+
+.teachers {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+
+.star_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star{
+    font-size: 80px;
+    color: rgb(255, 255, 70);
+    animation: star 1.5s infinite ease-in-out;
+}
+
+@keyframes star{
+  0%{
+    transform: scale(1);
+    transform-origin: center center;
+    transition-timing-function: ease-out;
+  } 
+
+  10%{
+    transform: scale(0.90);
+    transition-timing-function: ease-in;
+  } 
+
+  17%{
+    transform: scale(0.95);
+    transition-timing-function: ease-out;
+  }
+
+  33% {
+    transform: scale(0.85);
+    transition-timing-function: ease-in;
+  }
+
+  45% {
+    transform: scale(1);
+    transition-timing-function: ease-out;
+  }
+}
+
+.header_teachers {
+    padding: 10px;
+    font-weight: 700;
+    color: dodgerblue;
+    text-align: center;
+}
+
+.teachers_wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    margin: 10px;
+}
+
+.reviews{
+    background-color: rgba(87, 166, 230, 0.4);
+    padding-bottom: 20px;
+}
+
+.header_reviews{
+    font-weight: 700;
+    color: dodgerblue;
+    text-align: center;
+}
+
+
+.list-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-group-item{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 13px;
+}
+
+footer h5 {
+    color: dodgerblue;
+    font-weight: 700;
+    padding-left: 30px;
+}
+
+.footer_wrapper_contacts {
+    display: flex;
+    flex-direction: column;
+    padding-left: 23px;
+}
+
+.footer_wrapper_social{
+    display: flex;
+    padding-left: 23px;
+}
+
+.footer_social{
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_social_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    width: 32px;
+    height: 32px;
+    background-color:#fff;
+    border-radius: 100%;
+}
+
+.contacts_link{
+    color: rgb(255, 255, 70);
+}
+
+.contacts_link:hover {
+    color: rgb(255, 255, 70);;
+}
+
+footer a {
+    text-decoration: none !important;
+}
+
+footer .fa-telegram,
+footer .fa-whatsapp,
+footer .fa-viber,
+footer .fa-instagram {
+    text-decoration: none !important;
+}
+
+/* reg */
+.reg_form h2{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.reg_form input{
+    height: 3.3rem;
+}
+
+.gender_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+}
+
+.radio-label input[type="radio"] {
+    margin-right: 5px;
+}
+
+.file-upload {
+    position: relative;
+    overflow: hidden;
+    width: 20%;
+    height: 40px;
+    background: #7aad55;
+    border-radius: 3px;
+    padding: 8px 4px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.file-upload span {
+    line-height: 36px;
+}
+
+.reg_btn_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg_btn_wrapper a {
+    color: white;
+    text-decoration: none;
+}
+
+.reg_table_wrapper{
+    text-align: center;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.cntrl_btn_wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.cntrl_btn_wrapper button{
+    margin: 10px;
+}
+
+/* login */
+.login_wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 1 auto;
+}
+
+body{
+    height: 100%;
+}
+
+.log_form h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.log_form input{
+    height: 3.3rem;
+}
+
+.login_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_btn a{
+    color: white;
+    text-decoration: none;
+}
+
+/* contacts */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1,h3 {
+    color: #007bff;
+    font-weight: 700;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-info label {
+    display: block;
+    font-weight: bold;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.contact-form {
+    margin: 20px 0;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.faq_title{
+    color: dodgerblue;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.faq_subtitle{
+    color: dodgerblue;
+    font-weight: 700;
+}
+
+/* table */
+
+/* js */
+/* task2 */
+.task2wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user1_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+.user2_wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.label_user{
+    color:dodgerblue;
+    font-weight: 700;
+    margin: 0 20px ;
+}
+
+.chat_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat-box {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.user1-message {
+    text-align: left;
+    margin: 10px;
+    padding: 7px;
+    background-color: dodgerblue; 
+    border-radius: 10px;
+    max-width: 45%;
+}
+
+.user2-message {
+    text-align: right;
+    margin: 15px;
+    padding: 7px;
+    background-color: rgb(196, 200, 205);
+    border-radius: 10px;
+    max-width: 45%;
+    position: relative;
+    left: 48%;
+}
+
+/* task3 */
+.task3wrapper{
+    display: flex;
+    flex-direction: column;
+}
